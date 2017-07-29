@@ -1,5 +1,6 @@
 $(document).ready(function() {
   
+  var after = 0;
   var count = 0;
   var operations = [];
   var nums = [];
@@ -114,12 +115,20 @@ $(document).ready(function() {
       count++;
     } else {
       nums.push(num2);
+      after = 0;
     }
   });
   
   $(".minus").on("click", function() { 
     if ((nums.length === operations.length) && (nums.length > 0)) {
+      if (after === 1) {
+        $(".op").html("-");
+        operations.push("-");
+        nums.push(num2);
+        after = 0;
+      } else {
       $(".op").append("-");
+      }
     } else {
       $(".op").html("-");
       operations.push("-");
@@ -140,6 +149,7 @@ $(document).ready(function() {
       count++;
     } else {
       nums.push(num2);
+      after = 0;
     }
   });
   
@@ -151,6 +161,7 @@ $(document).ready(function() {
       count++;
     } else {
       nums.push(num2);
+      after = 0;
     }
   });
   
@@ -162,6 +173,7 @@ $(document).ready(function() {
       count++;
     } else {
       nums.push(num2);
+      after = 0;
     }
   });
   
@@ -213,6 +225,8 @@ $(document).ready(function() {
       if (l === "%") {
         acc = acc % num2;
       }
+    
+    after = 1;
     $(".res").html(acc);
     }
   }
@@ -223,7 +237,7 @@ $(document).ready(function() {
       num1 = 0;
       num2 = 0;
       count = 0;
-      operation = "";
+      after = 0;
       operations = [];
       nums = [];
     }
