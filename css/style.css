@@ -1,0 +1,56 @@
+html {
+  margin-top: 50px;
+}
+
+#bod {
+  /*background: #BDE5E2;*/
+  /*background: radial-gradient(circle, red, yellow, green);*/
+  background: radial-gradient(circle, #7AE5E2, #410CE8, #EBECEE);
+}
+
+#con {
+  /*background: rgb(222,255,225);*/
+  /*background: #7AE5E2;*/
+  background: linear-gradient(#7AE5E2);
+  width: 176px;
+  margin: auto;
+  border: outset 2px rgba(0,0,0,.1);
+  border-radius: 5px;
+}
+
+button {
+  width: 40px;
+}
+
+.op {
+  background: rgba(255,255,255,.6);
+  width: 160px;
+  border: solid 1px rgba(0,0,0,.3);
+  border-radius: 5px;
+  height: 25px;
+  margin-left: 6px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.res {
+  background: rgba(255,255,255,.6);
+  width: 160px;
+  border: solid 1px rgba(0,0,0,.3);
+  border-radius: 5px;
+  height: 25px;
+  margin-left: 6px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#myInfo {
+  margin-top: 50px;
+  border-top: solid 1px rgba(255,255,255,.2);
+  text-align: center;
+  color: rgba(255,255,255,.5);
+}
+
+#git {
+  text-align: center;
+}
