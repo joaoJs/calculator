@@ -5,7 +5,12 @@ html {
 #bod {
   /*background: #BDE5E2;*/
   /*background: radial-gradient(circle, red, yellow, green);*/
-  background: radial-gradient(circle, #7AE5E2, #410CE8, #EBECEE);
+  /*background: radial-gradient(circle, #7AE5E2, #410CE8, #EBECEE);*/
+  background: url("http://xboxhut.com/wp-content/uploads/2016/06/pastel-colors-tumblr-background-eclectic-expansive.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #con {
